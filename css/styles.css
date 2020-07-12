@@ -1,0 +1,214 @@
+*{
+  margin: 0;
+  padding: 0;
+  text-decoration: none;
+  font-family: 'Poppins', sans-serif;
+}
+
+a:hover{
+  text-decoration: none;
+}
+
+/* For computers */
+/* Styling header and inner components */
+.header {
+  width: 100%;
+  height: 10vh;
+  background-color: #BAEDE4;
+  opacity: 0.8;
+  padding: 1vh;
+  position: fixed;
+  z-index: 10;
+
+  display: grid;
+  align-items: center;
+  grid-template-areas: "logo menu social";
+  grid-template-columns: 1fr 2fr 1fr;
+  grid-gap: 1vh;
+}
+
+.logo{
+  grid-area: logo;
+
+  font-size: 5vh;
+  letter-spacing: 2vh;
+  padding-left: 2vh ;
+}
+
+.menu{
+  grid-area: menu;
+  justify-self: center;
+
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  align-items: center;
+}
+
+.menu div{
+  height: 5vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.menu div:hover{
+  background-color: #85EBD9;
+  border-radius: 1vh;
+}
+
+.menu a{
+  color: black;
+  letter-spacing: 0.5vh;
+  margin-right: 2.5vh;
+  margin-left: 2.5vh;
+  font-size: 2.5vh;
+  justify-self: center;
+}
+
+
+
+
+
+.social{
+  grid-area: social;
+  justify-self: center;
+
+  display: flex;
+}
+
+.social a{
+  margin-right: 2vh;
+}
+
+.social-icon{
+  width: 5vh;
+}
+
+/* for phones */
+@media screen and (max-width: 800px) {
+  .header{
+    grid-template-areas: "logo" "menu" "social";
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 1fr 0fr;
+
+    height: auto;
+  }
+
+  .logo{
+    font-size: 4vh;
+    justify-self: center;
+  }
+
+  .menu{
+    justify-self: center;
+
+  }
+
+  .menu a{
+    font-size: 2vh;
+  }
+
+  .social{
+    visibility: hidden;
+    position: fixed;
+  }
+}
+
+/* Styling home image */
+
+.img-home{
+  width: 100%;
+  height: 40vh;
+}
+
+/* Styling properties section */
+.properties{
+  margin: 10vh;
+
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-content: space-between;
+  flex-direction: row;
+}
+
+.card{
+  width:400px;
+  padding: 2vh;
+  margin: 2vh;
+  border: 1px solid #BAEDE4;
+  border-radius: 20px;
+}
+
+.card a{
+  color: black;
+}
+
+.card a:hover{
+  background-color: darkgrey;
+  opacity: 0.8;
+  z-index: 9;
+  text-decoration: none;
+}
+
+
+.card img{
+  width: 100%;
+  border-radius: 10px;
+}
+
+.card-body{
+  margin: 4vh;
+}
+
+
+/* Styling property*/
+
+.spacer{
+  height: 10vh;
+}
+
+.slidershow-pictures{
+  display: grid;
+  align-items: center;
+  justify-content: center;
+
+  margin: 10vh;
+  overflow: hidden;
+}
+
+.slide img{
+  height: 80vh;
+  width: 150vh;
+}
+
+.slidershow-pictures .navigation{
+
+  display: flex;
+  justify-content: center;
+}
+
+.slidershow-pictures .slides{
+  display: flex;
+}
+
+.slidershow-pictures .slide{
+  transition: 0.6s;
+}
+
+.navigation .bar{
+  width: 10vh;
+  height: 2vh;
+  border: 0.3vh solid black;
+  margin: 1vh;
+  cursor: pointer;
+}
+
+.navigation .bar:hover{
+  background-color: black;
+}
+
+.slidershow-pictures input[name="r"]{
+  position: absolute;
+  visibility: hidden;
+}
