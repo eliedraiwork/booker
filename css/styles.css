@@ -13,7 +13,8 @@ a:hover{
 /* Styling header and inner components */
 .header {
   width: 100%;
-  height: 10vh;
+  height: 100px;;
+  min-height: 50px;
   background-color: #BAEDE4;
   opacity: 0.8;
   padding: 1vh;
@@ -39,7 +40,7 @@ a:hover{
   grid-area: menu;
   justify-self: center;
 
-  display: grid;
+  display: flex;
   grid-template-columns: 1fr 1fr 1fr;
   align-items: center;
 }
@@ -119,6 +120,32 @@ a:hover{
 .img-home{
   width: 100%;
   height: 40vh;
+}
+
+.home{
+  width:100%;
+  padding: 10vh;
+
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+}
+
+.home > div{
+  height: 20vh;
+  min-width: 50vh;
+  margin: 3vh;
+  background-color: #BAEDE4;
+  border-radius: 15px;
+}
+
+.home-properties{
+
+}
+
+.home-contact{
+
 }
 
 /* Styling properties section */
