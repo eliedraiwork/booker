@@ -49,7 +49,9 @@ a:hover{
 }
 
 .menu div{
-  height: 5vh;
+  height: 100%;
+  border-radius: 5px;
+
   display: flex;
   align-items: center;
   justify-content: center;
@@ -57,7 +59,6 @@ a:hover{
 
 .menu div:hover{
   background-color: #85EBD9;
-  border-radius: 1vh;
 }
 
 .menu a{
@@ -127,7 +128,7 @@ a:hover{
 
 .home{
   width:100%;
-  padding: 75px;
+  margin-top: 50px;
 
   display: flex;
   flex-wrap: wrap;
@@ -139,6 +140,7 @@ a:hover{
 .home > div{
   height: 150px;
   min-width: 300px;
+  margin: 10px;
 
   background-color: #BAEDE4;
   border-radius: 15px;
@@ -146,6 +148,7 @@ a:hover{
   display: flex;
   justify-content: center;
   align-items: center;
+
 }
 
 .home >div:hover{
@@ -156,15 +159,55 @@ a:hover{
 .home p{
   font-size: 25px;
   letter-spacing: 5px;
+
 }
 
 .home-properties{
-  margin-right: 100px;
 }
 
 .home-contact{
-  margin-left: 100px;
 }
+
+
+.regions{
+  width: 100%;
+  height: 200px;
+
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  align-content: center;
+  justify-content: space-around;
+  justify-items: space-around;
+}
+
+.region{
+  width: 300px;
+  height: 150px;
+  justify-self: center;
+
+  display: flex;
+  justify-content: center;
+  align-content: center;
+  text-align: center;
+}
+
+.region img{
+  max-width: 100%;
+  min-width: 100%;
+  max-height: 100%;
+  min-height: 100%;
+
+  border-radius: 20px;
+}
+
+.region p{
+  position: fixed;
+
+  color: white;
+  font-size: 30px;
+  letter-spacing: 5px;
+}
+
 
 /* Styling properties section */
 .properties{
